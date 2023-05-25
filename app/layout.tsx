@@ -1,6 +1,9 @@
+import React from "react";
+import {GlobalNav} from "@/ui/GlobalNav";
 import './globals.css'
+import style from './layout.module.css'
 export const metadata = {
-  title: 'me',
+  title: 'linround',
   description: '',
 }
 
@@ -9,9 +12,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const theme = 'dark'
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html data-theme={theme}>
+      <body>
+      <div className={style.container}>
+        <GlobalNav />
+        {children}
+      </div>
+      </body>
     </html>
   )
 }
