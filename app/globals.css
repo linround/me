@@ -2,8 +2,10 @@
   --bg-color: #000;
   --font-color: #fff;
   --text-decoration-color: aqua;
-  --content-text-color:#b1ff00;
+  --content-text-color:#4c90f0;
   --content-link-text-decoration-color:aqua;
+  --line-bg-color:#685656;
+  --contact-link-color:#c4de16;
 }
 [data-theme="light"] {
   --bg-color: white;

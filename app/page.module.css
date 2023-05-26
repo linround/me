@@ -3,8 +3,26 @@
   text-decoration-style: wavy;
   text-decoration-color: var(--content-link-text-decoration-color);
 }
+
+.contact{
+  color: var(--contact-link-color);
+  text-decoration: none;
+  
+}
 .container {
   padding:0 10px;
+  list-style: none;
+}
+.line{
+  background-color: var(--line-bg-color);
+  height: 1px;
+  margin-top: 30px;
+}
+.information {
+  margin-top: 40px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 /*.main {*/
 /*  display: flex;*/

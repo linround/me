@@ -13,7 +13,19 @@ export default function Home() {
         </Link>
         .</li>
       <li>In 2020, Start learning front-end.</li>
-      <li></li>
+      <li className={style.line}></li>
+      <li className={style.information}>
+        <Link
+          className={style.contact}
+          target={'_blank'}
+          href={'https://github.com/linround'}>
+          GitHub</Link>
+        ·
+        <Link
+          className={style.contact}
+          href={'mailto:yuanlincuc@gmail.com'}>
+          Gmail</Link>
+      </li>
     </ul>
 
   )
