@@ -2,6 +2,8 @@
   --bg-color: #000;
   --font-color: #fff;
   --text-decoration-color: aqua;
+  --content-text-color:#b1ff00;
+  --content-link-text-decoration-color:aqua;
 }
 [data-theme="light"] {
   --bg-color: white;

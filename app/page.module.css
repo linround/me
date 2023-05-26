@@ -1,5 +1,11 @@
-
-
+.link {
+  color: var(--content-text-color);
+  text-decoration-style: wavy;
+  text-decoration-color: var(--content-link-text-decoration-color);
+}
+.container {
+  padding:0 10px;
+}
 /*.main {*/
 /*  display: flex;*/
 /*  flex-direction: column;*/
