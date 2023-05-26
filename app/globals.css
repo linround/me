@@ -1,10 +1,12 @@
-[data-theme="black"]{
-  --bg-color:#000;
+[data-theme="dark"]{
+  --bg-color: #000;
   --font-color: #fff;
+  --text-decoration-color: aqua;
 }
 [data-theme="light"] {
   --bg-color: white;
   --font-color: #000;
+  --text-decoration-color:aqua;
 }
 
 /*:root {*/

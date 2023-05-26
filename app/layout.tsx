@@ -18,7 +18,9 @@ export default function RootLayout({
       <body>
       <div className={style.container}>
         <GlobalNav />
-        {children}
+        <div className={style.content}>
+          {children}
+        </div>
       </div>
       </body>
     </html>
