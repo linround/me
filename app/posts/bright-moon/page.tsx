@@ -11,7 +11,7 @@ export default function page(){
     <div className={style.container}>
       <div className={style.header}>
         <div className={style.title}>
-          <Link href={brightMoon.link} target={'_blank'}>
+          <Link href={brightMoon.link} className={style.link} target={'_blank'}>
             {brightMoon.title}
           </Link>
         </div>
@@ -28,7 +28,7 @@ export default function page(){
         <p>它等待着，在即将结束的那一天，我将翻开这本陪伴我始终，却始终未曾翻开的台历，在上面，有着最后的答案。</p>
         <p>我翻开了它，在这本台历上，写着一句连名人是谁都没说明白的名人名言。
           是的，这就是我想说的，这就是我想通过徐霞客所表达的，足以藐视所有王侯将相，最完美的结束语：</p>
-        <p>成功只有一个——按照自己的方式，去度过人生。</p>
+        <p className={style.keyword}>成功只有一个——按照自己的方式，去度过人生。</p>
       </article>
     </div>
   )
