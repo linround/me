@@ -10,12 +10,12 @@ export default function page(){
   return (
     <div className={style.container}>
       <div className={style.header}>
-        <div>
+        <div className={style.title}>
           <Link href={brightMoon.link} target={'_blank'}>
             {brightMoon.title}
           </Link>
         </div>
-        <div>{brightMoon.author}{formatTime(brightMoon.timestamp)}</div>
+        <div className={style.introduction}>{brightMoon.author}{formatTime(brightMoon.timestamp)}</div>
       </div>
       <article className={style.content}>
         <p>&quot;我只是个平民，没有受命，只是穿着布衣，拿着拐杖，穿着草鞋，凭借自己，游历天下，故虽死，无憾。&ldquo;</p>
