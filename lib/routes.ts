@@ -7,19 +7,19 @@ export type Item = {
 export const items:Item[] = [
   {
     name:'Posts',
-    slug:'/posts',
+    slug:'posts',
     description:'一些灵感'
   },{
     name:'Projects',
-    slug:'/projects',
+    slug:'projects',
     description:'一些项目'
   },{
     name:'Art',
-    slug:'/art',
+    slug:'art',
     description:'一些灵感'
   },{
     name:'About',
-    slug:'/',
+    slug:'',
     description:'一些经历'
   },
 ]

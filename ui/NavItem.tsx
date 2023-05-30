@@ -11,10 +11,10 @@ interface IProp {
 }
 export function NavItem(prop:IProp){
   const {item} = prop
-  const pathname = usePathname();
-  const isActive = pathname === item.slug
+  const segment = useSelectedLayoutSegment() || '';
+  const isActive = segment === item.slug
   return (
-    <Link href={item.slug} className={clsx([style.link,isActive && style.active])}>
+    <Link href={`/${item.slug}`} className={clsx([style.link,isActive && style.active])}>
       {item.name}
     </Link>
   )

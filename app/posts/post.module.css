@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #ccfc10;
+  margin: 10px 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  text-decoration: none;
+}
+.container:hover{
+  opacity: 0.8;
+}
+.title {
+  flex: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date {
+  flex: 1;
+  font-size: 12px;
+  color: white;
+  padding-left: 50px ;
+}
