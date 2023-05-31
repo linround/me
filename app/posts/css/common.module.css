@@ -1,5 +1,4 @@
 .desc {
-  /*color: wheat;*/
   opacity: 0.8;
   font-size: 12px;
   letter-spacing: 1px;
@@ -10,4 +9,9 @@
 }
 .hr{
   border-bottom: 1px solid blanchedalmond;
+  margin: 4px 0;
+}
+.options{
+  gap: 10px;
+  display: flex;
 }

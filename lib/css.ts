@@ -7,7 +7,7 @@ export const text:IPost = {
   author:'lin',
   route:'/posts/css/text',
   link:'https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Styling_text',
-  desc:'记录字体的样式使用'
+  desc:'字体常见的样式使用'
 }
 export const css:IPost[] = [
   text,

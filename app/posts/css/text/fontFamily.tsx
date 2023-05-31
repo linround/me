@@ -1,5 +1,4 @@
 'use client'
-import style from "@/app/posts/css/text/fontFamily.module.css";
 import commonStyle from "@/app/posts/css/common.module.css"
 import {useState} from "react";
 
@@ -12,7 +11,7 @@ export function FontFamily(){
       <p className={commonStyle.desc}>
         当修改字体样式时，对于中文字体的影响可以忽略；对于英文字体样式影响较大.
       </p>
-      <div className={style.fontFamilyOptions}>
+      <div className={commonStyle.options}>
         {fontFamilies.map(font=>{
           return (<button key={font} onClick={()=>setFontFamily(font)}>{font}</button>)})}
       </div>
