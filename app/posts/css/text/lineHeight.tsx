@@ -5,22 +5,25 @@ import {Property} from "csstype";
 import TextTransform = Property.TextTransform;
 
 export function LineHeight(){
-  const [textShadow,setTextTransform] = useState<string>('')
-  const textShadows = ['6px 8px 10px red']
+  const [lineHeight,setLineHeight] = useState<string>('')
+  const lineHeights = ['24px','2em','1rem','1','2']
   return (
     <>
       <h2>line-height</h2>
+      <p className={commonStyle.desc}>
+        设置文本每行之间的高。可使用单位；也可使用一个无单位的值作为乘数。推荐行高大约是1.5-2（双倍间距）
+      </p>
       <div className={commonStyle.options}>
-        {textShadows.map(font=>{
-          return (<button key={font} onClick={()=>setTextTransform(font)}>{font}</button>)})}
+        {lineHeights.map(font=>{
+          return (<button key={font} onClick={()=>setLineHeight(font)}>{font}</button>)})}
       </div>
-      <article style={{textShadow}}>
-        <ul>
-          <li>阴影与原始文本的水平偏移，6px；值必须指定</li>
-          <li>阴影与原始文本的垂直偏移，8px；值必须指定</li>
-          <li>模糊半径-更高的值意味着阴影分散的更加广泛，10px；默认为0</li>
-          <li>阴影的基础颜色，red；默认为black</li>
-        </ul>
+      <article style={{lineHeight}}>
+        <p>
+          Said Tommy the Cat as he reeled back to clear whatever foreign matter may have nestled its way into his mighty throat.
+          Many a fat alley rat had met its demise while staring point blank down the cavernous barrel of this awesome prowling machine.
+          Truly a wonder of nature this urban predator — Tommy the cat had many a story to tell.
+          But it was a rare occasion such as this that he did.
+        </p>
       </article>
       <div className={commonStyle.hr} />
     </>
