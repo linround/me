@@ -26,7 +26,7 @@ export function FontFamily(){
         <p>&#34: &#34;</p>
         <p>&ldquo：&ldquo;</p>
         <p>&rdquo：&rdquo;</p>
-        <p>HTML实体组成：一个与符号(&) + (实体名称 或 #和一个ASCII码)</p>
+        <p>HTML实体组成：一个与符号(&) + (实体名称 或 #和一个ASCII码) + 分号(;)</p>
       </article>
       <div className={commonStyle.hr} />
     </>
