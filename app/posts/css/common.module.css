@@ -15,3 +15,10 @@
   gap: 10px;
   display: flex;
 }
+.options>button {
+  cursor: pointer;
+  padding: 4px 6px;
+  background-color: var(--article-button-bg-color);
+  color: var(--font-color);
+  border-radius: 8px;
+}

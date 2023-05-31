@@ -8,6 +8,7 @@
   --contact-link-color:#c4de16;
   --post-title-link-color:#fff;
   --post-title-introduction-color:white;
+  --article-button-bg-color: #5a5e10;
 }
 [data-theme="light"] {
   --bg-color: white;
