@@ -5,7 +5,7 @@ import {formatTime} from "@/utils/dayjs";
 export function Post(prop: {post:IPost} ){
   const {post} = prop
   return (
-    <Link className={style.container} href={'/posts/bright-moon'}>
+    <Link className={style.container} href={post.route}>
       <div className={style.title}>{post.title}</div>
       <div className={style.date}>{formatTime(post.timestamp)}</div>
     </Link>
