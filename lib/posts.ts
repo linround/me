@@ -13,6 +13,7 @@ export const brightMoon:IPost = {
   link:'https://zh.wikipedia.org/wiki/%E6%98%8E%E6%9C%9D%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%85%92'
 }
 
+
 export const posts:IPost[] = [
-  brightMoon
+  brightMoon,brightMoon,
 ]

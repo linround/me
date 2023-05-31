@@ -8,12 +8,16 @@
   opacity: 0.8;
   transition: opacity .2s ease-in-out;
   text-decoration: none;
+  border-bottom: 2px solid #514b4b;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
 }
 .container:hover{
   opacity: 1;
 }
 .title {
-  flex: 3;
+  flex: 5;
   overflow: hidden;
   text-overflow: ellipsis;
 }

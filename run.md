@@ -1,4 +1,6 @@
 docker 生成镜像
+> cd   /usr/local/bright_moon
+
 > docker build -t bright_moon .
 
 docker 镜像作为容器运行  
