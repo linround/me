@@ -11,7 +11,7 @@ export default function page(){
     <div className={style.container}>
       <div className={style.header}>
         <div className={style.title}>
-          <Link href={brightMoon.link} className={style.link} target={'_blank'}>
+          <Link href={brightMoon.link || ''} className={style.link} target={'_blank'}>
             {brightMoon.title}
           </Link>
         </div>
