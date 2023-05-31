@@ -1,0 +1,13 @@
+.desc {
+  /*color: wheat;*/
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: opacity .2s ease-in-out;
+}
+.desc:hover{
+  opacity: 1;
+}
+.hr{
+  border-bottom: 1px solid blanchedalmond;
+}
