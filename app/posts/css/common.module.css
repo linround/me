@@ -8,7 +8,8 @@
   opacity: 1;
 }
 .hr{
-  border-bottom: 1px solid blanchedalmond;
+  border-bottom: 20px solid blanchedalmond;
+  border-radius: 2px;
   margin: 20px 0 10px 0;
 }
 .options{
