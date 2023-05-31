@@ -1,8 +1,6 @@
 'use client'
 import {useState} from "react";
 import commonStyle from "@/app/posts/css/common.module.css";
-import {Property} from "csstype";
-import TextTransform = Property.TextTransform;
 
 export function LineHeight(){
   const [lineHeight,setLineHeight] = useState<string>('')

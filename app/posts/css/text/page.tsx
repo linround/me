@@ -6,6 +6,7 @@ import {TextTransform} from "@/app/posts/css/text/textTransform";
 import {TextShadow} from "@/app/posts/css/text/textShadow";
 import {TextAlign} from "@/app/posts/css/text/textAlign";
 import {LineHeight} from "@/app/posts/css/text/lineHeight";
+import {TextSpace} from "@/app/posts/css/text/textSpace";
 export const metadata = {
   title: 'FontFamily',
 }
@@ -19,6 +20,7 @@ export default function page() {
       <TextShadow />
       <TextAlign />
       <LineHeight />
+      <TextSpace />
     </div>
   )
 }
