@@ -3,7 +3,7 @@ import {Item} from "@/lib/routes";
 import Link from "next/link";
 import React from "react";
 import style from './navItem.module.css'
-import {usePathname, useSelectedLayoutSegment} from "next/navigation";
+import { useSelectedLayoutSegment} from "next/navigation";
 import clsx from "clsx";
 
 interface IProp {

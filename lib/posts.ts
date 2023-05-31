@@ -3,7 +3,7 @@ export interface IPost{
   title:string
   timestamp:number
   author:string
-  link?:string
+  link:string
   route:string
 }
 export const brightMoon:IPost = {
@@ -21,8 +21,20 @@ export const mShapedSociety:IPost = {
   timestamp: 1685499769579,
   author:'lin',
   route:'/posts/m-shaped-society',
+  link:''
+}
+
+export const css:IPost = {
+  id: 3,
+  title: 'CSS',
+  timestamp: 1685499769579,
+  author:'lin',
+  route:'/posts/css',
+  link:''
 }
 
 export const posts:IPost[] = [
-  brightMoon,mShapedSociety,
+  brightMoon,
+  mShapedSociety,
+  css
 ]
