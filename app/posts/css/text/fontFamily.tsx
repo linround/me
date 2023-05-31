@@ -23,8 +23,10 @@ export function FontFamily(){
         <p>中文文本</p>
         <p>English text</p>
         <p>“”</p>
-        <p>&quot;&ldquo;</p>
-        <p>&#34;&rdquo;</p>
+        <p>&quot：&quot;</p>
+        <p>&#34: &#34;</p>
+        <p>&ldquo：&ldquo;</p>
+        <p>&rdquo：&rdquo;</p>
         <p>HTML实体组成：一个与符号(&)+ (实体名称或#和一个ASCII码)</p>
       </article>
       <div className={commonStyle.hr} />
