@@ -5,7 +5,7 @@ import style from './page.module.css'
 export default function Home() {
   return (
     <ul className={style.container}>
-      <li>In 2020, I got my BEng degree in
+      <li>I got my BEng degree in
         Electronic and Information Engineering from <Link
           className={style.link}
           target={'_blank'}
@@ -13,7 +13,7 @@ export default function Home() {
           Communication University of China
         </Link>
         .</li>
-      <li style={{margin:'10px 0'}}>In 2020, Start learning front-end.</li>
+      <li style={{margin:'10px 0'}}>I am a front-end developer.</li>
       <li className={style.line}></li>
       <li className={style.information}>
         <Link
