@@ -15,3 +15,7 @@ docker 更新镜像
 - 移除之前的容器
   > docker rm <the-container-id>
 - 重复前两个步骤：`生成镜像`、`镜像作为容器运行`
+
+
+# 优化工具
+-[ closure-compiler ](https://github.com/google/closure-compiler)
