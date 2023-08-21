@@ -14,12 +14,12 @@ export const items:Item[] = [
     slug:'projects',
     description:'一些项目'
   },{
-    name:'Art',
-    slug:'art',
+    name:'render',
+    slug:'',
     description:'一些灵感'
   },{
     name:'About',
-    slug:'',
+    slug:'about',
     description:'一些经历'
   },
 ]

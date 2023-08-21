@@ -39,6 +39,4 @@ export const css:IPost = {
 
 export const posts:IPost[] = [
   brightMoon,
-  mShapedSociety,
-  css
 ]

@@ -1,33 +1,20 @@
-import Link from "next/link";
-import style from './page.module.css'
+
+import css from "./page.module.css";
 
 
 export default function Home() {
   return (
-    <ul className={style.container}>
-      <li>I got my BEng degree in
-        Electronic and Information Engineering from <Link
-          className={style.link}
-          target={'_blank'}
-          href={'https://www.cuc.edu.cn/'}>
-          Communication University of China
-        </Link>
-        .</li>
-      <li style={{margin:'10px 0'}}>I am a front-end developer.</li>
-      <li className={style.line}></li>
-      <li className={style.information}>
-        <Link
-          className={style.contact}
-          target={'_blank'}
-          href={'https://github.com/linround'}>
-          GitHub</Link>
-        ·
-        <Link
-          className={style.contact}
-          href={'mailto:yuanlincuc@gmail.com'}>
-          Gmail</Link>
-      </li>
-    </ul>
+    <div className={css.container}>
+      <iframe width="640" height="360" frameBorder="0"
+              src="https://www.shadertoy.com/embed/mtByWc?gui=true&t=10&paused=true&muted=false"
+              allowFullScreen></iframe>
+      <iframe width="640" height="360" frameBorder="0"
+              src="https://www.shadertoy.com/embed/dtfyRl?gui=true&t=10&paused=true&muted=false"
+              allowFullScreen></iframe>
+      <iframe width="640" height="360" frameBorder="0"
+              src="https://www.shadertoy.com/embed/DlSyDW?gui=true&t=10&paused=true&muted=false"
+              allowFullScreen></iframe>
+    </div>
 
   )
 }
