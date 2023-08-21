@@ -1,10 +1,10 @@
 docker 生成镜像
-> cd   /usr/local/bright_moon
+> cd   /usr/local/me
 
-> docker build -t bright_moon .
+> docker build -t me .
 
 docker 镜像作为容器运行  
-> docker run -d -p 3000:3000 bright_moon
+> docker run -d -p 3000:3000 me
 
 docker 更新镜像
 - 获取容器ID
