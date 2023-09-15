@@ -15,10 +15,10 @@ RUN npm install && npm run build
 FROM node:alpine
 
 # 复制构建好的可执行文件到镜像中
-COPY --from=builder /me/.next /me/.next
+COPY --from=builder /me/.next /.next
 
 # 丛编译容器中复制配置文件 到容器中
-COPY --from=builder /me/package.json /me/package.json
+COPY --from=builder /me/package.json /package.json
 
 
 
