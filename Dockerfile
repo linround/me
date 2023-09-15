@@ -5,9 +5,9 @@ RUN npm install && npm run build
 
 
 FROM node:alpine
+WORKDIR .
 COPY --from=builder ./app/.next          ./.next
 COPY --from=builder ./app/package.json   ./
 
-WORKDIR .
 CMD ["npm","run","start"]
 EXPOSE 3000
