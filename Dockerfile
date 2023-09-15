@@ -18,7 +18,7 @@ FROM alpine
 COPY --from=builder /me/.next /me/.next
 
 # 丛编译容器中复制配置文件 到容器中
-COPY --from=builder /me/package.json /package.json
+COPY --from=builder /me/package.json /me/package.json
 
 
 
