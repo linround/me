@@ -7,12 +7,12 @@ WORKDIR /me
 # 将所有源文件复制到容器中
 COPY . .
 
-# 安装依赖包
+# 安装依赖包,编译代码并输出
 RUN npm install && npm run build
 
 
 # 使用 alpine 镜像
-FROM alpine
+FROM node:alpine
 
 # 复制构建好的可执行文件到镜像中
 COPY --from=builder /me/.next /.next
