@@ -5,7 +5,7 @@ RUN npm install && npm run build
 
 
 FROM node:alpine
-WORKDIR .
+WORKDIR ./
 COPY --from=builder ./app/.next          ./.next
 COPY --from=builder ./app/package.json   ./
 
