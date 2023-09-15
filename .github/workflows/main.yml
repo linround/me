@@ -1,1 +1,59 @@
 
+name: deploy me
+# 运行器 的名称
+run-name: me
+# 监听push 事件
+on:
+  push:
+    tags:
+      - 'v1.*' # 指定tag 运行工作流
+  pull_request:
+    branches: [ main ]
+
+# 指定运行的任务
+jobs:
+  # 运行任务 build
+  build:
+
+    runs-on: ubuntu-latest # 任务运行的操作平台
+
+    # 指定任务的运行步骤
+    steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name:  Docker Hub 登录
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.WEB_SITE_NAME }} # dockerhub用户名
+          password: ${{ secrets.WEB_SITE_ACCESS_TOKEN }} # dockerhub分发的token
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        #        在这里会默认执行Dockerfile中的流程
+        with:
+          push: true
+          tags: ${{ secrets.WEB_SITE_NAME }}/me:latest
+
+      - name: Restart server   # 重启服务
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          #          初始已经设置过容器名 ucalendarService
+          #          为了更好的进行 更新可以使用不同的tag触发不同的工作流
+          #          以下步骤完成：
+          #          1.暂停了已经运行的容器
+          #          2.移除该容器
+          #          3.移除之前的镜像，防止消耗太多内存
+          #          3.拉取更新镜像
+          #          4.使用镜像运行一个容器在8888端口进行映射，同时将该运行的容器命名ucalendarService
+          script: |
+            docker stop me 
+            docker rm me
+            docker rmi ${{ secrets.WEB_SITE_NAME }}/me:latest
+            docker pull ${{ secrets.WEB_SITE_NAME }}/me:latest
+            docker run --name=me -d -p 3000:3000 ${{ secrets.WEB_SITE_NAME }}/me

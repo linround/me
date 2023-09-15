@@ -1,6 +1,7 @@
 docker 生成镜像
 > cd   /usr/local/me
 
+构建一个
 > docker build -t me .
 
 docker 镜像作为容器运行  
