@@ -12,7 +12,7 @@ RUN npm install && npm run build
 
 
 # 使用 alpine 镜像
-FROM node:alpine
+FROM alpine
 
 # 复制构建好的可执行文件到镜像中
 COPY --from=builder /me/.next /me/.next
