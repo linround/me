@@ -1,13 +1,7 @@
-FROM node:alpine as builder
+FROM node:alpine
 COPY ./ /app
 WORKDIR /app
 RUN npm install && npm run build
-
-
-FROM node:alpine
-WORKDIR ./
-COPY --from=builder ./app/.next          ./.next
-COPY --from=builder ./app/package.json   ./
 
 CMD ["npm","run","start"]
 EXPOSE 3000
