@@ -6,10 +6,6 @@ export type Item = {
 
 export const items:Item[] = [
   {
-    name:'Posts',
-    slug:'posts',
-    description:'一些灵感'
-  },{
     name:'Projects',
     slug:'projects',
     description:'一些项目'

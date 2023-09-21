@@ -8,7 +8,6 @@ export default function About() {
     <ul className={style.container}>
       <li>I got my bachelor degree in
         Electronic and Information Engineering from
-        Communication University of China
         .</li>
       <li style={{margin:'10px 0'}}>I am a front-end developer.</li>
       <li className={style.line}></li>
