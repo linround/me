@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 [data-theme="dark"]{
   --bg-color: #000;
   --font-color: #fff;

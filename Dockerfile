@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:18 as builder
 COPY ./ /app
 WORKDIR /app
 RUN npm install && npm run build

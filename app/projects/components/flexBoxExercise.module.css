@@ -1,0 +1,70 @@
+
+.card{
+  --iconSize:18px;
+  border: 1px solid white;
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.card:hover {
+}
+.card:hover .cardImgHover {
+}
+.card:hover .cardInfo {
+}
+.card:hover .cardInfoHover {
+}
+
+.cardInfoHover{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 16px;
+}
+.cardClockInfo{
+
+}
+.cardLike{
+  width: var(--iconSize);
+}
+.cardClock{
+  width: var(--iconSize);
+}
+.cardImg {
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+}
+.cardTime{
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 12px;
+  
+}
+
+.cardLink{}
+.cardImgHover{
+
+}
+.cardInfo{
+
+}
+.cardCategory{
+
+}
+.cardTitle{
+
+}
+.cardBy{
+
+}
+.cardAuthor{
+
+}
