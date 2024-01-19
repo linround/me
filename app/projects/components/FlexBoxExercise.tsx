@@ -12,14 +12,14 @@ import style from './flexBoxExercise.module.css'
 export function FlexBoxExercise() {
   return (
     <article className={style.card}>
-      <div className={style.cardInfoHover}>
-        <Heart className={style.cardLike}/>
-        <div className={style.cardClockInfo}>
-          <Clock className={style.cardClock}/>
-          <span className={style.cardTime}>15 min</span>
-        </div>
+      {/*<div className={style.cardInfoHover}>*/}
+      {/*  <Heart className={style.cardLike}/>*/}
+      {/*  <div className={style.cardClockInfo}>*/}
+      {/*    <Clock className={style.cardClock}/>*/}
+      {/*    <span className={style.cardTime}>15 min</span>*/}
+      {/*  </div>*/}
 
-      </div>
+      {/*</div>*/}
       <div className={style.cardImg} ></div>
       <a href="#" className={style.cardLink}>
         <div className={style.cardImgHover}></div>

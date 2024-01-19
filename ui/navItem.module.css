@@ -1,8 +1,8 @@
 .link {
   color: var(--font-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-style: wavy;
 }
 .active {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-style: wavy;
 }
