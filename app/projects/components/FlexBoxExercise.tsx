@@ -1,6 +1,5 @@
-import {Heart} from "@/icon/Heart";
-import {Clock} from "@/icon/Clock";
 import style from './flexBoxExercise.module.css'
+import {graphicsLibraryRouter} from "@/lib/routes";
 
 /**
  *
@@ -21,14 +20,14 @@ export function FlexBoxExercise() {
 
       {/*</div>*/}
       <div className={style.cardImg} ></div>
-      <a href="#" className={style.cardLink}>
+      <span  className={style.cardLink}>
         <div className={style.cardImgHover}></div>
-      </a>
+      </span>
       <div className={style.cardInfo}>
-        <span className={style.cardCategory}> 种类</span>
-        <h3 className={style.cardTitle}>Crisp Spanish tortilla Matzo brei</h3>
+        <span className={style.cardCategory}> Tag</span>
+        <h3 className={style.cardTitle}>{graphicsLibraryRouter.description}</h3>
         <span className={style.cardBy}>
-          by <a href="#" className={style.cardAuthor} title="author">Celeste Mills</a></span>
+          by <span className={style.cardAuthor} title="author">linround</span></span>
       </div>
     </article>
   )

@@ -3,7 +3,11 @@
   text-decoration-style: wavy;
   text-decoration-color: var(--content-link-text-decoration-color);
 }
-
+.caption {
+  font-size: 12px;
+  opacity: 0.6;
+  color: #4c90f0;
+}
 .contact{
   color: var(--contact-link-color);
   text-decoration: none;

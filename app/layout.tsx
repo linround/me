@@ -13,6 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const theme = 'dark'
+
   return (
     <html data-theme={theme}>
       <body>
