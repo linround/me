@@ -18,20 +18,7 @@ export default function About() {
         </li>
 
         <li className={style.listItem}>
-          <ArticleLink href={'https://three.ucalendar.cn/'}>shader与图形学</ArticleLink>
-        </li>
-
-        <li className={style.information}>
-          <Link
-            className={style.contact}
-            target={'_blank'}
-            href={'https://github.com/linround'}>
-            GitHub</Link>
-
-          <Link
-            className={style.contact}
-            href={'mailto:yuanlincuc@gmail.com'}>
-            Gmail</Link>
+          <ArticleLink href={'https://three.ucalendar.cn/'}>Shader与图形学</ArticleLink>
         </li>
     </ul>
 

@@ -2,6 +2,7 @@ import React from "react";
 import {GlobalNav} from "@/ui/GlobalNav";
 import './globals.css'
 import style from './layout.module.css'
+import {LayoutFooter} from "@/ui/layoutFooter";
 export const metadata = {
   title: 'linround',
   description: '',
@@ -22,7 +23,9 @@ export default function RootLayout({
         <div className={style.content}>
           {children}
         </div>
+        <LayoutFooter />
       </div>
+
       </body>
     </html>
   )
