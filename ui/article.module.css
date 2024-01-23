@@ -1,0 +1,15 @@
+
+.link {
+  cursor: pointer;
+  padding:4px 6px;
+  border-radius: 4px;
+  color: var(--font-color);
+  text-decoration: none;
+  background: var(--button-hover-bg-color);
+  transition: all .2s ease-in-out;
+}
+.link:hover{
+  transform: scale(1.1,1.1);
+  background-color: #f6f6f6;
+  color: #4c90f0;
+}
