@@ -10,6 +10,6 @@
   margin-top: 20px;
 }
 .linkUrl{
-  color: white;
+  color: var(--font-color);
   padding: 2px;
 }

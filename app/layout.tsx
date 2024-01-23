@@ -12,7 +12,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const theme = 'dark'
+  const theme = 'light'
 
   return (
     <html data-theme={theme}>
