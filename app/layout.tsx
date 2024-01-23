@@ -3,6 +3,7 @@ import {GlobalNav} from "@/ui/GlobalNav";
 import './globals.css'
 import style from './layout.module.css'
 import {LayoutFooter} from "@/ui/layoutFooter";
+import {AddSiteVisitorRecords, SiteVisitorRecords} from "@/api/siteVisitorRecords";
 export const metadata = {
   title: 'linround',
   description: '',
@@ -14,7 +15,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const theme = 'light'
-
   return (
     <html data-theme={theme}>
       <body>
@@ -26,6 +26,9 @@ export default function RootLayout({
         <LayoutFooter />
       </div>
 
+
+      <SiteVisitorRecords/>
+      <AddSiteVisitorRecords />
       </body>
     </html>
   )
