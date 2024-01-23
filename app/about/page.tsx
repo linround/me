@@ -19,7 +19,7 @@ export default function About() {
           target={'_blank'}
           href={'https://github.com/linround'}>
           GitHub</Link>
-        ·
+
         <Link
           className={style.contact}
           href={'mailto:yuanlincuc@gmail.com'}>

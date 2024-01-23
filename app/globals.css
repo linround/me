@@ -18,6 +18,8 @@
   --bg-color: #fff;
   --font-color: #000;
   --text-decoration-color:aqua;
+  --button-hover-bg-color:#f5f0f0;/* 按钮hover 时的背景颜色*/
+  --link-hover-font-color:  #73736d;/* 链接hover 时的字体颜色 */
 }
 
 /*:root {*/

@@ -10,6 +10,14 @@
   margin-top: 20px;
 }
 .linkUrl{
-  color: var(--font-color);
   padding: 2px;
+}
+.linkText{
+  padding:2px 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  color: var(--font-color);
+}
+.linkText:hover{
+  background-color: var(--button-hover-bg-color);
 }

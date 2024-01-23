@@ -9,9 +9,14 @@
   color: #4c90f0;
 }
 .contact{
-  color: var(--contact-link-color);
+  padding:2px 4px;
+  border-radius: 4px;
+  color: var(--font-color);
   text-decoration: none;
-  
+  transition: all 0.2s ease-in-out;
+}
+.contact:hover{
+ background: var(--button-hover-bg-color);
 }
 .container {
   padding:0 10px;

@@ -26,7 +26,10 @@ export default function Page() {
           graphicsLibraryLinks.map(link=>{
             return (
               <div key={link.url} className={style.linkUrl}>
-                <Link href={link.url} target={'_blank'}>{link.url}</Link>
+                <Link
+                  className={style.linkText}
+                  href={link.url}
+                  target={'_blank'}>{link.url}</Link>
               </div>
             )
           })

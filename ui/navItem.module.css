@@ -1,5 +1,9 @@
 .link {
   color: var(--font-color);
+  transition: all .2s ease;
+}
+.link:hover{
+  color: var(--link-hover-font-color);
 }
 .active {
   text-decoration: underline;
