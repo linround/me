@@ -17,14 +17,13 @@
 }
 [data-theme="light"] {
   --google-font-family:"Kalam", sans-serif;
-  --bg-color: #fff;
+  --bg-color: #ffffff;
   --font-color: #000;
   --text-decoration-color:aqua;
   --button-hover-bg-color:#f5f0f0;/* 按钮hover 时的背景颜色*/
   --link-hover-font-color:  #73736d;/* 链接hover 时的字体颜色 */
 }
 body{
-
 }
 
 /*:root {*/

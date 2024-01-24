@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("./bg.svg");
 }
 .content {
   margin-top: 10px;
