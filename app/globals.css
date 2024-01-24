@@ -24,6 +24,8 @@
   --link-hover-font-color:  #73736d;/* 链接hover 时的字体颜色 */
 }
 body{
+  
+  font-family: var(--google-font-family);
 }
 
 /*:root {*/
