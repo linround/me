@@ -1,5 +1,6 @@
 import style from "./page.module.css";
 import {ArticleLink} from "@/ui/articleLink";
+import {Profile} from "@/app/about/profile";
 
 export const metadata = {
   title: 'About',
@@ -12,7 +13,9 @@ export default function About() {
         </li>
         <li className={style.listItem}>I am a front-end developer.</li>
 
-        <img className={style.profile} src={'/profile.svg'}/>
+        <li className={style.profile}>
+          <Profile  />
+        </li>
         <li className={style.caption}>
           看了一些非技术类的书籍，例如一些心理学，社会学，人物传记。此时，我对因果深信不移。我也打算在此种下因的种子，希望可以由此给你带来一些帮助。
         </li>
