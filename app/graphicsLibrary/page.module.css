@@ -17,6 +17,7 @@
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   color: var(--font-color);
+  font-family: var(--google-font-family);
 }
 .linkText:hover{
   background-color: var(--button-hover-bg-color);
