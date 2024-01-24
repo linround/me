@@ -102,6 +102,7 @@
   font-weight: 600;
   text-decoration: none;
   color: #AD7D52;
+  font-family: var(--google-font-family);
 }
 .card:hover .cardImgHover {
   height: 100%;

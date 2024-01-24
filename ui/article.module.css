@@ -1,5 +1,6 @@
 
 .link {
+  font-family: var(--google-font-family);
   cursor: pointer;
   padding:4px 6px;
   border-radius: 4px;
