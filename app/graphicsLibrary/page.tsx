@@ -16,6 +16,14 @@ const graphicsLibraryLinks = [
   {
     url: 'https://github.com/konvajs/konva',
     name:'konva'
+  },
+  {
+    url: 'https://github.com/rough-stuff/rough',
+    name:'rough'
+  },
+  {
+    url: 'https://github.com/fabricjs/fabric.js',
+    name:'fabric'
   }
 ]
 export default function Page() {
@@ -63,7 +71,11 @@ export default function Page() {
         部分源码参考了
         <strong>
           <Link className={style.linkText} href={'https://github.com/konvajs/konva'} target={'_blank'}>konva</Link>
-        </strong>。
+        </strong>；<br/>
+        <strong>
+          <Link className={style.linkText} href={'https://github.com/fabricjs/fabric.js'} target={'_blank'}>fabric</Link>
+        </strong>
+        的交互非常全面。
       </footer>
 
 
