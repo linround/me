@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
+@import url("../ui/v1/font.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -22,3 +22,6 @@
 .linkText:hover{
   background-color: var(--button-hover-bg-color);
 }
+.footer{
+  margin-top: 1em;
+}
