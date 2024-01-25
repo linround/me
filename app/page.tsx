@@ -1,8 +1,12 @@
-
+'use client'
 import css from "./page.module.css";
+import {useEffect} from "react";
+
 
 
 export default function Home() {
+  useEffect(()=>{
+  })
   return (
     <div className={css.container}>
         <iframe width="640" height="360" frameBorder="0"
