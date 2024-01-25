@@ -25,3 +25,8 @@ export const graphicsLibraryRouter = {
   slug:'graphicsLibrary',
   description:'收集图形库'
 }
+export const calendarDemo = {
+  name:'calendarDemo',
+  slug:'https://ucalendar.cn/',
+  description:'开源的日历web'
+}
