@@ -4,7 +4,6 @@
   width: 300px;
   height: 100px;
   margin: 2em 0;
-  border: 1px dotted black;
 }
 .anim04c{
   transition: all .4s cubic-bezier(.5, .35, .15, 1.4);
