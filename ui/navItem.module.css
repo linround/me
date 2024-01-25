@@ -9,6 +9,6 @@
   text-decoration: underline;
   text-decoration-color: var(--text-decoration-color);
   text-decoration-style: wavy;
-  text-decoration-skip-ink:none;
-  text-underline-offset: 0.3em;
+  text-decoration-skip-ink:none; /* 处理字体底部波浪线被截断的问题 通过覆盖表面 */
+  text-underline-offset: 0.3em; /* 处理字体底部波浪线被截断的问题 通过移动波浪线的位置 */
 }
