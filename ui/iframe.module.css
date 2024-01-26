@@ -8,16 +8,11 @@
   }
 }
 .iframe {
-  --skeleton-color: rgba(0, 0, 0, 0.06);
-  --skeleton-color-gradient-end: rgba(0, 0, 0, 0.15);
-  --skeleton-gradient-from-color: rgba(0, 0, 0, 0.06);
-  --skeleton-gradient-to-color: rgba(0, 0, 0, 0.15);
-  
   background: linear-gradient(
     90deg,
-    var(--skeleton-gradient-from-color) 25%,
-    var(--skeleton-gradient-to-color) 37%,
-    var(--skeleton-gradient-from-color) 63%
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.15) 37%,
+    rgba(0, 0, 0, 0.06) 63%
   );
   background-size: 400% 100%;
   animation-name: css-skeleton-loading;
