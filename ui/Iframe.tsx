@@ -20,7 +20,7 @@ export function IframeComponent(props:IProps) {
   },[ref])
   return (
     <iframe
-      className={clsx([loading && style.iframe])}
+      className={clsx([style.normal,loading && style.iframe])}
       ref={ref}
       width="640"
       height="360"
