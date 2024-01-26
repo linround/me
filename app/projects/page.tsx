@@ -1,5 +1,3 @@
-import Link from "next/link";
-import {calendarDemo, graphicsLibraryRouter} from "@/lib/routes";
 import {CalendarDemo} from "@/app/projects/components/CalendarDemo";
 import {FlexBoxExercise} from "@/app/projects/components/FlexBoxExercise";
 export const metadata = {
@@ -8,12 +6,9 @@ export const metadata = {
 export default function page() {
   return (
     <div>
-      <Link href={calendarDemo.slug} target={'_blank'}>
-        <CalendarDemo />
-      </Link>
-      <Link href={graphicsLibraryRouter.slug} target={'_blank'}>
-        <FlexBoxExercise/>
-      </Link>
+
+      <CalendarDemo />
+      <FlexBoxExercise/>
 
     </div>
   )
