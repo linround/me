@@ -4,28 +4,49 @@ import clsx from "clsx";
 import {useEffect, useState} from "react";
 import dayjs from "dayjs";
 type Value = number |string |null
+
+function getYear() {
+  return dayjs().format('YYYY')
+}
+function getMonth() {
+  return +dayjs().format('M') -1
+}
+function getDate() {
+  return dayjs().format('DD')
+}
+function getDay() {
+  return +dayjs().format('d')
+}
+function getHours() {
+  return dayjs().format('HH')
+}
+function getMinute() {
+  return dayjs().format('mm')
+}
+function getSecond() {
+  return dayjs().format('ss')
+}
 export function CalendarDemo() {
   const monthNames = [ "一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月" ]
   const dayNames= [ "周日","周一","周二","周三","周四","周五","周六" ]
-  const newDate = new Date()
 
-  const [year,setYear] = useState<Value>(null)
-  const [month,setMonth] = useState<Value>(null)
-  const [date,setDate] = useState<Value>(null)
-  const [day,setDay] = useState<Value>(null)
-  const [hours,setHours] = useState<Value>(null)
-  const [minute,setMinute] = useState<Value>(null)
-  const [second,setSecond] = useState<Value>(null)
+  const [year,setYear] = useState<Value>(getYear())
+  const [month,setMonth] = useState<Value>(monthNames[getMonth()])
+  const [date,setDate] = useState<Value>(getDate())
+  const [day,setDay] = useState<Value>(dayNames[getDay()])
+  const [hours,setHours] = useState<Value>(getHours())
+  const [minute,setMinute] = useState<Value>(getMinute())
+  const [second,setSecond] = useState<Value>(getSecond())
 
   useEffect(()=>{
     const intervalID = setInterval(()=>{
-      setYear(dayjs().format('YYYY'))
-      setMonth(monthNames[+dayjs().format('M') -1])
-      setDate(dayjs().format('DD'))
-      setDay(dayNames[+dayjs().format('d')])
-      setHours(dayjs().format('HH'))
-      setMinute(dayjs().format('mm'))
-      setSecond(dayjs().format('ss'))
+      setYear(getYear())
+      setMonth(monthNames[getMonth()])
+      setDate(getDate())
+      setDay(dayNames[getDay()])
+      setHours(getHours())
+      setMinute(getMinute())
+      setSecond(getSecond())
 
     },1000)
     return ()=>{
