@@ -9,6 +9,7 @@ export async function addRecords() {
   const url:string = '/monitoring/add'
   const data = {
     category:'visit',
+    sourceSite:location.host,
     timePoint:Date.now(),
   }
   return fetch(`${baseUrl}${url}`,{
