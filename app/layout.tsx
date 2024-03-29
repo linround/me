@@ -4,6 +4,7 @@ import './globals.css'
 import style from './layout.module.css'
 import {LayoutFooter} from "@/ui/layoutFooter";
 import {AddSiteVisitorRecords, SiteVisitorRecords} from "@/api/siteVisitorRecords";
+
 export const metadata = {
   title: 'linround',
   description: '',
