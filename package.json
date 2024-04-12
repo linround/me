@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@linround/commonapi": "^1.0.0",
+    "@linround/commonapi": "^1.0.5",
     "@linround/my-test-package": "^1.0.0",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
