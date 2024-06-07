@@ -1,6 +1,6 @@
 import style from "./page.module.css";
 import {ArticleLink} from "@/ui/articleLink";
-import {Profile} from "@/app/about/profile";
+import {MusicCard} from "@/app/about/MusicCard";
 
 export const metadata = {
   title: 'About',
@@ -22,6 +22,9 @@ export default function About() {
 
         <li className={style.listItem}>
           <ArticleLink href={'https://three.ucalendar.cn/'}>Shader与图形学</ArticleLink>
+        </li>
+        <li>
+          <MusicCard></MusicCard>
         </li>
     </ul>
 
