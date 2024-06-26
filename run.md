@@ -18,5 +18,7 @@ docker 更新镜像
 - 重复前两个步骤：`生成镜像`、`镜像作为容器运行`
 
 
+# 项目文件地址
+/usr/linyuan/calendarServer
 # 优化工具
 -[ closure-compiler ](https://github.com/google/closure-compiler)
